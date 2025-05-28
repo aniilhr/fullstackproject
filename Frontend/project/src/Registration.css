@@ -1,0 +1,262 @@
+/* Registration.css
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  height: 100%;
+}
+
+.register-bg {
+  height: 100vh;
+  background: linear-gradient(to right, #9293d7, #3b4bb9,#081043);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.register-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 16px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 400px;
+  color: #ffffff;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.register-subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #f1f1f1;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 2px #fff;
+}
+
+.register-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #2193b0;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.register-button:hover {
+  background-color: #eeeeee;
+  transform: translateY(-2px);
+}
+
+.login-redirect {
+  text-align: center;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.login-redirect a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+} */
+/* Background with subtle gradient animation */
+.register-bg {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg, #181818, #4e5861, #2c2c27);
+  background-size: 600% 600%;
+  animation: gradientShift 10s ease infinite;
+  padding: 20px;
+}
+
+/* Reuse gradient animation keyframes */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Glassmorphic card */
+.register-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(82, 88, 165, 0.37);
+  padding: 40px 60px;
+  width: 360px;
+  max-width: 90vw;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Slight hover lift */
+.register-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(31, 38, 135, 0.5);
+}
+
+/* Header styling */
+.register-header {
+  font-size: 2.5rem;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+/* Subtitle */
+.register-subtitle {
+  font-size: 1.1rem;
+  color: #cfd8dc;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/* Labels */
+label {
+  display: block;
+  color: #ddd;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1.8px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #bbb;
+  font-style: italic;
+}
+
+/* Focus effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #2197b8;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Register button */
+.register-button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  background-color: #2197b8;
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  letter-spacing: 0.05em;
+}
+
+/* Button hover */
+.register-button:hover {
+  background-color: #176f8a;
+  box-shadow: 0 6px 15px rgba(23, 111, 138, 0.6);
+}
+
+/* Redirect to login text */
+.login-redirect {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+/* Link inside redirect */
+.login-redirect a {
+  color: #66c0ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-redirect a:hover {
+  color: #2197b8;
+  text-decoration: underline;
+}
+
+/* Animate on scroll support */
+.register-card[data-aos] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition-property: opacity, transform;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-out;
+}

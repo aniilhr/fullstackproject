@@ -1,0 +1,254 @@
+/* Login.css
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  height: 100%;
+}
+
+.login-bg {
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #7138aa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 16px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 380px;
+  color: #fff;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.login-subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #f1f1f1;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 2px #fff;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f9f7f8;
+  color: #764ba2;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+.regi{
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.login-button:hover {
+  background-color: #eeeeee;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+} */
+ /* Background with subtle gradient animation */
+.login-bg {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg, #070707, #3f3f42, #070707);
+  background-size: 600% 600%;
+  animation: gradientShift 15s ease infinite;
+  padding: 20px;
+}
+
+/* Gradient background animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Glassmorphic card with subtle shadows and backdrop blur */
+.login-glass-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(80, 151, 180, 0.37);
+  padding: 40px 60px;
+  width: 360px;
+  max-width: 90vw;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Slight lift on hover for the card */
+.login-glass-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(31, 38, 135, 0.5);
+}
+
+/* Header style */
+.login-header {
+  font-size: 2.5rem;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+/* Subtitle style */
+.login-subtitle {
+  font-size: 1.1rem;
+  color: #cfd8dc;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/* Labels */
+label {
+  display: block;
+  color: #ddd;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+/* Inputs with smooth focus */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1.8px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: #bbb;
+  font-style: italic;
+}
+
+/* Input focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #2197b8;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Login button */
+.login-button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  background-color: #2197b8;
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  letter-spacing: 0.05em;
+}
+
+/* Button hover */
+.login-button:hover {
+  background-color: #176f8a;
+  box-shadow: 0 6px 15px rgba(23, 111, 138, 0.6);
+}
+
+/* Register link styling */
+.regi {
+  color: #66c0ff;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 6px;
+  transition: color 0.3s ease;
+}
+
+.regi:hover {
+  color: #2197b8;
+  text-decoration: underline;
+}
+
+/* Center the register text */
+center {
+  font-size: 0.95rem;
+  color: #ddd;
+  margin-top: 15px;
+}
+
+/* Add subtle fade-in animation for the entire form */
+.login-glass-card[data-aos] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition-property: opacity, transform;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-out;
+}
+

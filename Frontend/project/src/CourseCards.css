@@ -1,0 +1,141 @@
+/* .course-page {
+  padding: 40px;
+  background: linear-gradient(to right, #7578cc, #373333);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #f2f6f6;
+  margin-bottom: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.course-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+.course-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.course-card:hover .course-image {
+  transform: scale(1.1);
+}
+
+.course-content {
+  padding: 20px;
+}
+
+.course-content h2 {
+  font-size: 1.5rem;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.course-content p {
+  color: #666;
+  font-size: 1rem;
+}
+.testt{
+  color: white;
+} */
+ .course-page {
+  padding: 40px;
+  background: linear-gradient(to right, #1c1c1c, #3a3a3a);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.course-card {
+  background-color: white;
+  color: #333;
+  width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+}
+
+.course-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.course-content {
+  padding: 20px;
+}
+
+.course-content h2 {
+  margin-top: 0;
+  font-size: 22px;
+  color: #1e3c72;
+}
+
+.course-content p {
+  font-size: 14px;
+  margin: 10px 0 20px;
+}
+
+.course-content button {
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.course-content button:hover {
+  background-color: #002060;
+}
+
+.testt {
+  color: white;
+  text-decoration: none;
+}

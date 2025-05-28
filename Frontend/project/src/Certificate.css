@@ -1,0 +1,90 @@
+.mainbody {
+  background: #f9f9f9;
+  min-height: 100vh;
+  padding: 30px 10px;
+  
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.certificate {
+  background: #fffdf5;
+  border: 8px solid #0e86be;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.uppercertificate h1 {
+  font-size: 36px;
+  color: #e67e22;
+  margin-bottom: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.uppercertificate p {
+  font-size: 18px;
+  color: #2c3e50;
+  margin: 6px 0;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.uppercertificate h3 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #ed2207;
+}
+
+.uppercertificate h4 {
+  font-size: 22px;
+  color: #122d8e;
+  margin: 10px 0;
+}
+
+.lowercertificate {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  border-top: 1px dashed #595555;
+  padding-top: 20px;
+}
+
+.lowercertificate h5 {
+  font-size: 16px;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.lowercertificate p {
+  font-size: 14px;
+  color: #555;
+}
+
+a h5 {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #3498db;
+  transition: color 0.3s;
+}
+
+a h5:hover {
+  color: #1e87f0;
+  text-decoration: underline;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e8449;
+}

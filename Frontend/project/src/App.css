@@ -1,0 +1,93 @@
+.home-container {
+  padding: 40px;
+  background: linear-gradient(to right, #070707, #8e9eab);
+  min-height: 100vh;
+}
+.rrrr{
+  color: white;
+  text-align: center;
+}
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 150px;
+}
+
+.custom-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+.custom-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #1e3c72;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card-content button {
+  width: 100%;
+  padding: 10px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.card-content button:hover {
+  background-color: #002060;
+}
+.options{
+  
+  margin: 50px;
+  color: #03010a;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.realop{
+  color: #070707;
+  background-color: #2197b8;
+  padding: 30px;
+  margin-right: 100px;
+  border-radius: 20px;
+  box-shadow: #070707;
+  text-shadow: #070707;
+  box-shadow: 0cqmax;
+  font-size: medium;
+}

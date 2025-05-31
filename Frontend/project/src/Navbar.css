@@ -1,4 +1,4 @@
-/* Navbar.css */
+/* Navbar.css
 .navbar {
   background: linear-gradient(to right, #2570c5, #b2a246);
   color: rgb(8, 8, 8);
@@ -105,4 +105,95 @@
     flex-direction: column;
     align-items: flex-start;
   }
+} */
+
+
+/* Reset */
+.navbar, .nav-links, .auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #34405d;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+.navbar-logo .logo-image {
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover .logo-image {
+  transform: scale(1.1);
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #f8fafc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.auth-buttons {
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn.login {
+  background-color: transparent;
+  color: #38bdf8;
+  border: 1px solid #38bdf8;
+}
+
+.btn.signup {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.btn.logout {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
 }

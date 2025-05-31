@@ -1,6 +1,6 @@
 .explore-page {
   padding: 50px 20px;
-  background: #f7f8fc;
+  background-image: linear-gradient(rgb(7, 7, 7),rgb(41, 40, 40),rgb(240, 237, 237));
   font-family: 'Segoe UI', sans-serif;
   text-align: center;
 }
@@ -8,7 +8,7 @@
 .explore-title {
   font-size: 3rem;
   margin-bottom: 40px;
-  color: #1a1a1a;
+  color: #f9f2f2;
 }
 
 .explore-grid {
@@ -29,7 +29,7 @@
 
 .explore-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 40px rgba(243, 244, 245, 0.15);
 }
 
 .explore-image {

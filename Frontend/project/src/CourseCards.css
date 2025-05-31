@@ -65,7 +65,7 @@
 } */
  .course-page {
   padding: 40px;
-  background: linear-gradient(to right, #1c1c1c, #3a3a3a);
+  background: linear-gradient(to right, #0b0c0c, #545353,rgb(219, 222, 222));
   min-height: 100vh;
   font-family: 'Segoe UI', sans-serif;
   color: white;

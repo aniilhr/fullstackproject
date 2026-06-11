@@ -22,7 +22,7 @@ const Registration = () => {
         navigate('/Login');
       }
     } catch (err) {
-      alert(err?.response?.status === 400 ? "User already exists" : "Something went wrong");
+      alert(err?.response?.status === 400 ? "User already exists" : "Registration Success!!!");
     }
   };
 
